@@ -7,17 +7,16 @@ Test Setup  Abrir navegador
 Test Teardown  Fechar navegador 
 
 *** Variables ***
-${URL}    http://automationpractice.com
+${URL}        http://automationpractice.com
 ${BROWSER}    chrome
 
 *** Test Cases ***
 Cenário 01: Pesquisar produto existente
-    Dado que estou na página home do site
+    Dado que estou na página home do site com o titulo "My Store"
     Quando eu pesquisar pelo produto "Blouse"
     Então o produto "Blouse" deve ser listado na página de resultado da busca
 
-#Cenário 02: Pesquisar produto não existente
-#Dado que estou na página home do site
-    #Dado que estou na página home do site
-    #Quando eu pesquisar pelo produto "ItemNâoExistente"
-    #Então a página deve exibir a mensagem no result were found for you search "ItemNâoExistente"
+Cenário 02: Pesquisar produto não existente
+    Dado que estou na página home do site com o titulo "My Store"
+    Quando eu pesquisar pelo produto "ItemNâoExistente"
+    Então a página deve exibir a mensagem no result were found for you search "ItemNâoExistente"
