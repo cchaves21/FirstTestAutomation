@@ -2,9 +2,9 @@
 Resource  /home/chaves/workspace/RobotFrameWork/FirstTestAutomation/resources/Resource.robot
 
 ### SETUP roda uma keyword antes de uma suite ou de um teste
-Test Setup  Abrir Navegador
+Test Setup  Abrir navegador
 ### TEARDOWN ele roda uma keyword depois de uma suite ou um teste
-Test Teardown  Fechar Navegador 
+Test Teardown  Fechar navegador 
 
 *** Variables ***
 ${URL}    http://automationpractice.com
